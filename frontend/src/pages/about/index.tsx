@@ -53,8 +53,12 @@ export const AboutPage = () => {
                 </p>
               </div>
             </div>
-            <div className="h-72 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400">
-              Фото производства
+            <div className="rounded-xl overflow-hidden shadow-md">
+              <img
+                src="/images/logo.jpg"
+                alt="Производство QullaiSifat"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

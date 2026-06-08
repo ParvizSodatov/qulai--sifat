@@ -18,8 +18,12 @@ export const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white shadow-sm">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link to="/" className="text-xl font-bold tracking-tight text-gray-900">
-          QullaiSifat
+        <Link to="/" className="flex items-center">
+          <img
+            src="/images/logo2.png"
+            alt="QullaiSifat"
+            className="h-12 w-auto object-contain"
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">

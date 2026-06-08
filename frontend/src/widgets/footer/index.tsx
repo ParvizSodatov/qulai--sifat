@@ -6,8 +6,14 @@ export const Footer = () => {
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div>
-            <p className="text-lg font-semibold text-white">QullaiSifat</p>
-            <p className="mt-2 text-sm">Производство профилей для натяжных потолков</p>
+            <div className="inline-block bg-white rounded-lg px-3 py-2">
+              <img
+                src="/images/logo2.png"
+                alt="QullaiSifat"
+                className="h-10 w-auto object-contain"
+              />
+            </div>
+            <p className="mt-3 text-sm">Производство профилей для натяжных потолков</p>
           </div>
           <div>
             <p className="text-sm font-semibold text-white uppercase tracking-wider">Навигация</p>
