@@ -8,36 +8,42 @@ const products = [
     name: 'Профиль ПП-1',
     desc: 'Универсальный настенный профиль для одноуровневых натяжных потолков.',
     specs: 'Длина: 2-6 м | Материал: ПВХ | Нагрузка: до 25 кг/м²',
+    image: '/images/profile-pp1.jpg',
   },
   {
     id: 2,
     name: 'Профиль ПП-2',
     desc: 'Профиль для двухуровневых потолков с усиленной конструкцией.',
     specs: 'Длина: 2-6 м | Материал: ПВХ | Нагрузка: до 35 кг/м²',
+    image: '/images/profile-pp2.jpg',
   },
   {
     id: 3,
     name: 'Профиль AL-100',
     desc: 'Алюминиевый профиль повышенной прочности для коммерческих помещений.',
     specs: 'Длина: 3-6 м | Материал: Алюминий | Нагрузка: до 50 кг/м²',
+    image: '/images/profile-al100.jpg',
   },
   {
     id: 4,
     name: 'Профиль AL-200',
     desc: 'Алюминиевый профиль для криволинейных потолков любой формы.',
     specs: 'Длина: 2-4 м | Материал: Алюминий | Нагрузка: до 45 кг/м²',
+    image: '/images/profile-al200.jpg',
   },
   {
     id: 5,
     name: 'Профиль ПТ-Арка',
     desc: 'Специальный гибкий профиль для арочных и нестандартных конструкций.',
     specs: 'Длина: 2-3 м | Материал: ПВХ гибкий | Радиус: от 30 см',
+    image: '/images/profile-arch.jpg',
   },
   {
     id: 6,
     name: 'Стартовый профиль',
     desc: 'Профиль для монтажа натяжного полотна по периметру помещения.',
     specs: 'Длина: 2-6 м | Материал: ПВХ | Универсальный',
+    image: '/images/profile-start.jpg',
   },
 ]
 
@@ -54,9 +60,11 @@ export const ProductsPage = () => {
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {products.map((p) => (
           <Card key={p.id} className="flex flex-col hover:shadow-md transition-shadow">
-            <div className="h-40 bg-gray-100 rounded-t-lg flex items-center justify-center text-gray-400 text-sm">
-              Фото профиля
-            </div>
+            <img
+              src={p.image}
+              alt={p.name}
+              className="h-48 w-full object-cover rounded-t-lg"
+            />
             <CardHeader>
               <CardTitle className="text-lg">{p.name}</CardTitle>
               <CardDescription>{p.desc}</CardDescription>

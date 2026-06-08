@@ -14,8 +14,16 @@ export const HomePage = () => {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-gray-900 to-gray-700 text-white">
-        <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8 text-center">
+      <section
+        className="relative text-white"
+        style={{
+          backgroundImage: 'url(/images/hero.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/85 to-gray-700/75" />
+        <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
             Профили для натяжных потолков
           </h1>
@@ -32,6 +40,7 @@ export const HomePage = () => {
           </div>
         </div>
       </section>
+
 
       {/* Advantages */}
       <section className="py-20 bg-gray-50">
